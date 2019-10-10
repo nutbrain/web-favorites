@@ -12,14 +12,60 @@
     <title>Web Favorites</title>
 </head>
 <style>
-h1{
-    text-align: center;
-}
+    body {
+        font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    }
+
+    a {
+        color: #00B7FF;
+    }
+
+    h1 {
+        text-align: center;
+        font-family:"KaiTi";
+        color:blueviolet;
+    }
+
+    main {
+        margin: 0, auto;
+    }
+
+    .aggregation {
+        color: blueviolet;
+    }
+
+    .agg-search {
+        color: blue;
+        margin: 0 0.2em;
+    }
+    .form-group{
+        text-align: center;
+    }
+    label {
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    .btn-agg {
+        width: 100%;
+    }
 </style>
+
 <body>
     <div id="app">
-        <div class="container">
+        <main class="container" role="main">
             <h1>常用网站收藏</h1>
+            <div class="aggregation row">
+                <form target="_blank" v-for="engine in engines" :action="engine.action" class=" col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label :for="engine.id">{{engine.title}}</label>
+                        <input class="form-control" type="text" :id="engine.id" :name="engine.name">
+                        <input v-if="engine.enc" type="hidden" name="enc" :value="engine.enc">
+                        <button type="submit" class="btn btn-info btn-agg">搜索</button>
+                    </div>
+                </form>
+            </div>
+            <hr>
             <div class="form-group">
                 <label for="keyword">关键字：</label>
                 <input type="text" placeholder="请输入筛选关键字" v-model="keyword">
@@ -38,7 +84,7 @@ h1{
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </main>
     </div>
 </body>
 
@@ -47,27 +93,33 @@ h1{
         el: "#app",
         data: {
             webs: [],
-            keyword:""
+            keyword: "",
+            engines: []
         },
-        computed:{
-            filteredWebs:function(){
+        computed: {
+            filteredWebs: function () {
                 let filteredWebs = this.webs.slice(0);
                 filteredWebs.forEach(web => {
-                    web.sitename=web.sitename[0].toUpperCase()+web.sitename.slice(1);
+                    web.sitename = web.sitename[0].toUpperCase() + web.sitename.slice(1);
                 });
-                filteredWebs.sort(function(a,b){
+                filteredWebs.sort(function (a, b) {
                     return a.sitename.toUpperCase().localeCompare(b.sitename.toUpperCase());
                 })
-                return filteredWebs.filter(function(web){
-                    return new RegExp(this.keyword,"i").test(web.sitename);
+                return filteredWebs.filter(function (web) {
+                    return new RegExp(this.keyword, "i").test(web.sitename);
                 }.bind(this));
             }
         },
-        created:function(){
-            $.get("jsons/sites.json",function(data,status){
+        created: function () {
+            $.get("jsons/sites.json", function (data, status) {
+                if (status == "success") {
+                    this.webs = data;
+                }
+            }.bind(this));
+            $.get("jsons/engines.json", function (data, status) {
                 console.log(data)
-                if(status=="success"){
-                    this.webs=data;
+                if (status == "success") {
+                    this.engines = data;
                 }
             }.bind(this));
         }
