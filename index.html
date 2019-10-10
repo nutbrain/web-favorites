@@ -28,10 +28,10 @@ h1{
                     <td>网址</td>
                 </thead>
                 <tbody>
-                    <tr v-for="(web,index) in webs">
+                    <tr v-for="(web,index) in filteredWebs">
                         <td>{{index}}</td>
-                        <td><a :href="web.url">{{web.title}}</a></td>
-                        <td><a :href="web.url">{{web.url}}</a></td>
+                        <td><a :href="web.url" target="_blank">{{web.title}}</a></td>
+                        <td><a :href="web.url" target="_blank">{{web.url}}</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -44,6 +44,15 @@ h1{
         el: "#app",
         data: {
             webs: webs
+        },
+        computed:{
+            filteredWebs:function(){
+                let filteredWebs = this.webs.slice(0);
+                filteredWebs.sort(function(a,b){
+                    return a.title.toUpperCase().localeCompare(b.title.toUpperCase());
+                })
+                return filteredWebs;
+            }
         }
     })
 </script>
