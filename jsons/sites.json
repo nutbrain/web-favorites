@@ -170,5 +170,13 @@
     {
         "sitename":"x-mol",
         "siteurl":"https://www.x-mol.com/"
+    },
+    {
+        "sitename":"dcloud",
+        "siteurl":"https://www.dcloud.io/"
+    },
+    {
+        "sitename":"Vant",
+        "siteurl":"https://youzan.github.io/vant/#/zh-CN/intro"
     }
 ]
