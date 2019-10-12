@@ -178,5 +178,9 @@
     {
         "sitename":"Vant",
         "siteurl":"https://youzan.github.io/vant/#/zh-CN/intro"
+    },
+    {
+        "sitename":"Netlify",
+        "siteurl":"https://www.netlify.com/"
     }
 ]
