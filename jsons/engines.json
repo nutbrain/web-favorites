@@ -1,5 +1,11 @@
 [
     {
+        "title":"谷歌",
+        "id":"google",
+        "name":"q",
+        "action":"https://www.google.com/search"
+    },
+    {
         "title":"必应",
         "id":"bing",
         "name":"q",
