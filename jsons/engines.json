@@ -3,110 +3,128 @@
         "title":"谷歌",
         "id":"google",
         "name":"q",
-        "action":"https://www.google.com/search"
+        "action":"https://www.google.com/search",
+        "url":"https://www.google.com"
     },
     {
         "title":"谷歌学术",
         "id":"googlescholar",
         "name":"q",
-        "action":"https://scholar.google.com/scholar"
+        "action":"https://scholar.google.com/scholar",
+        "url":"https://scholar.google.com"
     },
     {
         "title":"必应",
         "id":"bing",
         "name":"q",
-        "action":"https://cn.bing.com/"
+        "action":"https://cn.bing.com/",
+        "url":"https://cn.bing.com"
     },
     {
         "title":"必应词典",
         "id":"bingdict",
         "name":"q",
-        "action":"https://cn.bing.com/dict"
+        "action":"https://cn.bing.com/dict",
+        "url":"https://cn.bing.com/dict"
     },
     {
         "title":"必应学术",
         "id":"bingscholar",
         "name":"q",
-        "action":"https://cn.bing.com/academic/search"
+        "action":"https://cn.bing.com/academic/search",
+        "url":"https://cn.bing.com/academic"
     },
     {
         "title":"百度",
         "id":"baidu",
         "name":"wd",
-        "action":"https://www.baidu.com/s"
+        "action":"https://www.baidu.com/s",
+        "url":"https://www.baidu.com"
     },
     {
         "title":"百度学术",
         "id":"baiduscholar",
         "name":"wd",
-        "action":"http://xueshu.baidu.com/s"
+        "action":"http://xueshu.baidu.com/s",
+        "url":"http://xueshu.baidu.com"
     },
     {
         "title":"360",
         "id":"360",
         "name":"q",
-        "action":"https://www.so.com/s"
+        "action":"https://www.so.com/s",
+        "url":"https://www.so.com"
     },
     {
         "title":"淘宝",
         "id":"taobao",
         "name":"q",
-        "action":"https://s.taobao.com/search"
+        "action":"https://s.taobao.com/search",
+        "url":"https://s.taobao.com"
     },
     {
         "title":"京东",
         "id":"jd",
         "name":"keyword",
         "action":"https://search.jd.com/Search",
+        "url":"https://search.jd.com",
         "enc":"utf-8"
     },
     {
         "title":"知乎",
         "id":"zhihu",
         "name":"q",
-        "action":"https://www.zhihu.com/search"
+        "action":"https://www.zhihu.com/search",
+        "url":"https://www.zhihu.com"
     },
     {
         "title":"GitHub",
         "id":"github",
         "name":"q",
-        "action":"https://github.com/search"
+        "action":"https://github.com/search",
+        "url":"https://github.com"
     },
     {
         "title":"哔哩哔哩",
         "id":"bilibili",
         "name":"keyword",
-        "action":"https://search.bilibili.com/all"
+        "action":"https://search.bilibili.com/all",
+        "url":"https://www.bilibili.com"
     },
     {
         "title":"网易公开课",
         "id":"163open",
         "name":"query",
-        "action":"https://c.open.163.com/search/search.htm"
+        "action":"https://c.open.163.com/search/search.htm",
+        "url":"https://c.open.163.com"
     },
     {
         "title":"腾讯视频",
         "id":"qqvideo",
         "name":"q",
-        "action":"https://v.qq.com/x/search/"
+        "action":"https://v.qq.com/x/search/",
+        "url":"https://v.qq.com"
     },
     {
         "title":"万千合集站",
         "id":"hejizhan",
         "name":"kw",
-        "action":"http://www.hejizhan.com/bbs/"
+        "action":"http://www.hejizhan.com/bbs/",
+        "url":"http://www.hejizhan.com"
     },
     {
         "title":"豆瓣",
         "id":"douban",
         "name":"q",
-        "action":"https://www.douban.com/search"
+        "action":"https://www.douban.com/search",
+        "url":"https://www.douban.com"
     },
     {
         "title":"豆瓣电影",
         "id":"doubanmovie",
         "name":"search_text",
-        "action":"https://movie.douban.com/subject_search"
+        "action":"https://movie.douban.com/subject_search",
+        "url":"https://movie.douban.com"
     }
     
 ]
