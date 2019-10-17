@@ -59,7 +59,7 @@
         <main class="container" role="main">
             <h1>常用网站收藏</h1>
             <div class="aggregation row">
-                <form target="_blank" v-for="engine in engines" :action="engine.action"
+                <form @submit="handleSubmit" target="_blank" v-for="engine in engines" :action="engine.action"
                     class=" col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label :for="engine.id">
@@ -76,7 +76,7 @@
             <hr>
             <div class="form-group">
                 <label for="keyword">关键字：</label>
-                <input type="text" placeholder="请输入筛选关键字" v-model="keyword">
+                <input  type="text" placeholder="请输入筛选关键字" v-model="keyword">
             </div>
             <table class="table table-striped table-bordered">
                 <thead>
@@ -125,11 +125,19 @@
                 }
             }.bind(this));
             $.get("jsons/engines.json", function (data, status) {
-                console.log(data)
                 if (status == "success") {
                     this.engines = data;
                 }
             }.bind(this));
+        },
+        methods:{
+            handleSubmit(){
+                $('input[type="text"]').each((i,elem)=>{
+                    setTimeout(function(){
+                        elem.value="";
+                    },0);
+                })
+            }
         }
     })
 </script>
