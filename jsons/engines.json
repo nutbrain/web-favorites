@@ -85,6 +85,13 @@
         "url":"https://github.com"
     },
     {
+        "title":"Gitee",
+        "id":"gitee",
+        "name":"q",
+        "action":"https://gitee.com/search",
+        "url":"https://gitee.com"
+    },
+    {
         "title":"哔哩哔哩",
         "id":"bilibili",
         "name":"keyword",
