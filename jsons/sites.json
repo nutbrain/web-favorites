@@ -186,5 +186,17 @@
     {
         "sitename":"socket.io",
         "siteurl":"https://socket.io/"
+    },
+    {
+        "sitename":"bootstrap layoutit",
+        "siteurl":"https://www.layoutit.com/"
+    },
+    {
+        "sitename":"lodash中文",
+        "siteurl":"https://www.lodashjs.com/"
+    },
+    {
+        "sitename":"lodash英文",
+        "siteurl":"https://lodash.com/"
     }
 ]
