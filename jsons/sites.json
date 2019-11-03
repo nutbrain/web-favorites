@@ -210,5 +210,21 @@
     {
         "sitename":"爱资料工具",
         "siteurl":"https://www.toolnb.com/"
+    },
+    {
+        "sitename":"MikuTools - 工具集合",
+        "siteurl":"https://tool.imiku.me/"
+    },
+    {
+        "sitename":"Smallpdf",
+        "siteurl":"https://smallpdf.com/"
+    },
+    {
+        "sitename":"鸠摩搜书",
+        "siteurl":"https://www.jiumodiary.com/"
+    },
+    {
+        "sitename":"flatuicolors",
+        "siteurl":"https://flatuicolors.com/"
     }
 ]
