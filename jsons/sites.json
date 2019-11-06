@@ -230,5 +230,13 @@
     {
         "sitename":"后盾人",
         "siteurl":"https://www.houdunren.com/"
+    },
+    {
+        "sitename":"Smart Imaging Lab -- 郑国安",
+        "siteurl":"https://smartimaging.uconn.edu/"
+    },
+    {
+        "sitename":"智能计算成像实验室 -- 南京理工",
+        "siteurl":"http://www.scilaboratory.com/"
     }
 ]
