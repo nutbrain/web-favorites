@@ -186,7 +186,7 @@
             </table> -->
             <div class="webfav">
                 <ul>
-                    <li v-for="(web,index) in filteredWebs"><a :href="web.siteurl">{{index+1}}.{{web.sitename}}</a></li>
+                    <li v-for="(web,index) in filteredWebs"><a target="_blank" :href="web.siteurl">{{index+1}}.{{web.sitename}}</a></li>
                 </ul>
             </div>
         </main>
