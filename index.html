@@ -102,12 +102,40 @@
         background: rgb(216, 216, 216);
         transform:scale(1.1)
     }
+    .myWebs ul{
+        display:flex;
+        list-style-type: none;
+        justify-content: space-around;
+    }
+    .myWebs ul>li{
+        line-height: 5em;
+        margin:0px 10px;
+       
+    }
+    .myWebs ul>li>a{
+        color:#2980b9;
+        background:linear-gradient(to right,#9af7c1,#c0f7d7,#86f0b2);
+        padding:10px;
+        border:1px solid #16a085;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size:1.5em;
+        box-shadow: 3px 3px 5px gray;
+        font-family: cursive,"kaiti",fantasy;
+    }
 </style>
 
 <body>
     <div id="app">
         <main class="container" role="main">
             <h1>常用网站收藏</h1>
+            <nav class="myWebs">
+                <ul>
+                    <li v-for="(mysite,index) in mysites">
+                        <a target="_blank" :href="mysite.siteurl">{{mysite.sitename}}</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="aggregation row">
                 <form @submit="handleSubmit" target="_blank" v-for="engine in engines" :action="engine.action"
                     class=" col-lg-3 col-md-4 col-sm-6 col-xs-12">
@@ -152,7 +180,8 @@
         data: {
             webs: [],
             keyword: "",
-            engines: []
+            engines: [],
+            mysites:[]
         },
         computed: {
             filteredWebs: function () {
@@ -177,6 +206,11 @@
             $.get("jsons/engines.json", function (data, status) {
                 if (status == "success") {
                     this.engines = data;
+                }
+            }.bind(this));
+            $.get("jsons/mysites.json", function (data, status) {
+                if (status == "success") {
+                    this.mysites = data;
                 }
             }.bind(this));
         },

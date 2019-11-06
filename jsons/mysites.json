@@ -1,0 +1,22 @@
+[
+    {
+        "sitename":"holdyaon",
+        "siteurl":"http://holdyaon.nutbrain.cn"
+    },
+    {
+        "sitename":"diary",
+        "siteurl":"http://diary.nutbrain.cn"
+    },
+    {
+        "sitename":"todo",
+        "siteurl":"http://todo.nutbrain.cn"
+    },
+    {
+        "sitename":"签到",
+        "siteurl":"http://www.nutbrain.cn:5641"
+    },
+    {
+        "sitename":"成绩",
+        "siteurl":"http://grade.nutbrain.cn"
+    }
+]
