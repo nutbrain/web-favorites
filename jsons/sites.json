@@ -238,5 +238,9 @@
     {
         "sitename":"智能计算成像实验室 -- 南京理工",
         "siteurl":"http://www.scilaboratory.com/"
+    },
+    {
+        "sitename":"图灵社区",
+        "siteurl":"https://www.ituring.com.cn/"
     }
 ]
