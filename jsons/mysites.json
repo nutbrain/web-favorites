@@ -12,6 +12,10 @@
         "siteurl":"http://todo.nutbrain.cn"
     },
     {
+        "sitename":"clock",
+        "siteurl":"http://clock.nutbrain.cn"
+    },
+    {
         "sitename":"签到",
         "siteurl":"http://www.nutbrain.cn:5641"
     },
