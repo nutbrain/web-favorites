@@ -242,5 +242,9 @@
     {
         "sitename":"图灵社区",
         "siteurl":"https://www.ituring.com.cn/"
+    },
+    {
+        "sitename":"PHP文档",
+        "siteurl":"https://www.php.net/manual/zh/"
     }
 ]
