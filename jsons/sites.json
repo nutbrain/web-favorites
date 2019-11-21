@@ -246,5 +246,9 @@
     {
         "sitename":"PHP文档",
         "siteurl":"https://www.php.net/manual/zh/"
+    },
+    {
+        "sitename":"C语言中文网",
+        "siteurl":"http://c.biancheng.net/"
     }
 ]
