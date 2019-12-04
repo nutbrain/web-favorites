@@ -22,5 +22,9 @@
     {
         "sitename":"成绩",
         "siteurl":"http://grade.nutbrain.cn"
+    },
+    {
+        "sitename":"草稿",
+        "siteurl":"http://paint.nutbrain.cn"
     }
 ]
