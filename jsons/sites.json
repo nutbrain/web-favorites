@@ -250,5 +250,9 @@
     {
         "sitename":"C语言中文网",
         "siteurl":"http://c.biancheng.net/"
+    },
+    {
+        "sitename":"b-ok",
+        "siteurl":"https://b-ok.org/"
     }
 ]
