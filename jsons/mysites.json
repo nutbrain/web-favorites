@@ -26,5 +26,9 @@
     {
         "sitename":"草稿",
         "siteurl":"http://paint.nutbrain.cn"
+    },
+    {
+        "sitename":"打卡",
+        "siteurl":"http://touch.nutbrain.cn"
     }
 ]
