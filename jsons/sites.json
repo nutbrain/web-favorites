@@ -265,5 +265,9 @@
     {
         "sitename": "autodesk",
         "siteurl": "https://library.io"
+    },
+    {
+        "sitename": "blinker",
+        "siteurl": "https://diandeng.tech/home"
     }
 ]
